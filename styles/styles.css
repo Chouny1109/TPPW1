@@ -9,7 +9,7 @@
 .Login{
     border-style: solid;
     padding: 50px;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 10px;
     background-color: #272766ef;
     
@@ -18,7 +18,7 @@ a{
     text-align: center;
     justify-content: center;
     display: grid;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 a:hover{
     color: black;
@@ -32,14 +32,15 @@ p{
     color: white;
     margin-bottom: 50px;
 }
-body{
+.inicioSesion{
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('/img/0af6ce3e-b27a-4722-a5f0-e32af4df3045_what_is_netflix_5_en.png');
+    background-image: url('../img/0af6ce3e-b27a-4722-a5f0-e32af4df3045_what_is_netflix_5_en.png');
     background-attachment: fixed;
     background-size: cover;
+    border-style: solid;
 }
 
 .input-field{
