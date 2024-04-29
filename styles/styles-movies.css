@@ -1,0 +1,46 @@
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(0deg, rgba(53,52,206,1) 0%, rgba(11,11,39,1) 80%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+section{
+    display: flex;
+    width: 600px;
+    height: 430px;
+    
+}
+
+section a img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s;
+    z-index: 1;
+}
+
+section a img:hover{
+    height: auto;
+    width: 230px;
+    opacity: 1;
+    filter: blur(120%);
+}
+.peliculas{
+    width: 200px;
+  }
+
+h2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+p{
+    color: white;
+    
+    
+}
