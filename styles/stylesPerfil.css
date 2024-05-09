@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+html, body {
+  
+    margin: 0;
+    background: linear-gradient(0deg, rgba(53,52,206,1) 0%, rgba(11,11,39,1) 80%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    color: white;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.opciones {
+    /* Estilos para opciones */
+    display: flex;
+    gap: 25px;
+   
+
+}
+
+.opciones h4{
+    font-family: 'Poppins';
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+.opciones h4:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.opciones a{
+    color: white;
+    text-decoration: none;
+}
+.buscador {
+    width: 25%;
+    height: 40px;
+    background-color: rgba(34, 32, 32, 0.452);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between; /* Distribuir el espacio entre los elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+    border: 0px solid transparent; /* Asegúrate de establecer un borde inicial */
+    transition: background-color 0.5s ease, color 0.5s ease;
+    
+}
+
+
+
+.buscador:hover{
+    color: rgb(12, 12, 12);
+    background-color: rgba(255, 255, 255, 0.842);
+    
+}
+
+.buscador i {
+    margin-left: 16px;
+}
+
+.buscador input {
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin: 0 auto; /* Eliminar el margen por defecto */
+    margin-left: 9px;
+    color: rgb(255, 255, 255);
+    width: 87%;
+    height: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    transition: color 0.5s ease, color 0.5s ease;
+}
+
+.buscador input:hover{
+    color: black;
+}
+
+.buscador input::placeholder{
+    color:rgb(255, 255, 255)
+}
+.buscador input:hover::placeholder{
+    color:rgb(0, 0, 0)
+}
+
+
+.icons{
+    display: flex;
+    width: 180px;
+    gap: 50px;
+}
+.icons i {
+    /* Estilos para icons */
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease;
+}
+
+.icons i:hover{
+    transform: scale(1.4);
+}
+
+.contenedor{
+    display: flex;
+    margin: 50px 10px;
+
+}
+
+.perfil{
+    flex: 1;
+    margin-right: 10px;
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
+    border-radius: 18px;
+    height: max-content;
+    background-color: rgba(37, 32, 29, 0.404);
+    display: flex;
+}
+
+.perfil-header{
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+
+.foto-perfil{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
+}
+
+.titulo-perfil-contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo-perfil{
+    font-family: 'Roboto';
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.editar-cuenta{
+    flex: 2;
+    margin-left: 10px;
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
+    border-radius: 12px;
+    height: max-content;
+    background-color: rgba(29, 37, 37, 0.404);
+}
+
+.cuenta-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 3px solid grey;
+
+}
+
+.cuenta-titulo{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.cuenta-boton{
+    margin-right: 5px;
+}
+
+.boton-guardar{
+    padding: 15px;
+    color: #000000;
+    font-weight: bold;
+    background-color: #5761e9f4;
+    border: 0;
+    border-radius: 19px;
+    width: 150px;
+    font-family: 'Roboto';
+}
+.boton-guardar:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.boton-cancelar{
+    padding: 15px;
+    color: #000000;
+    font-weight: bold;
+    background-color: rgb(219, 215, 215);
+    border: 0;
+    border-radius: 19px;
+    width: 150px;
+    font-family: 'Roboto';
+}
+
+.boton-cancelar:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.editor-cuenta{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.input-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.input-container label{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    padding: 2px;
+}
+
+.input-container input{
+    font-family: "Roboto", sans-serif;
+    background-color: rgba(128, 128, 128, 0.281);
+    color: white;
+    height: 25px;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+
+}
+
+h4{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 20px;
+    color: white;
+}
+
+.pago-container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.pago-container label{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    padding: 2px;
+}
+
+.input-opciones{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+.ingresar-tarjeta{
+    display: flex;
+    flex-direction: column;
+}
+
+.ingresar-tarjeta input{
+    font-family: "Roboto", sans-serif;
+    height: 25px;
+    width: 200px; 
+    margin-top: 15px;
+    border:0;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.281);
+    color: white;
+    padding: 5px;
+}
+
+.cupon-seleccionar{
+    display: flex;
+    flex-direction: column;
+}
+
+.cupon-seleccionar input{
+     margin-top: 5px;
+     border: 20px;
+     padding: 5px
+}
+
+.cbu{
+    margin-top: 20px;
+  
+
+}
