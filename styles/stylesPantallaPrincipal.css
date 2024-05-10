@@ -266,12 +266,11 @@ header::after {
     justify-content: center; /* Agrega esta línea */
     align-items: center; 
     transition: transform 0.2s ease;
+    z-index: 1;
 }
 .cartelera:hover .porcentaje {
     transform: scale(1.2);
-    z-index: 1;
     right: 30px;
-     
 }
 
 .piePagina {
